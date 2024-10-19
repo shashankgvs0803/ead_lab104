@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Timetable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            color: black;
+            background-color: #f8f9fa;
+        }
+        .bordered {
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8px;
+            min-height: 60px;
+        }
+        .vertical-text {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        .lunchtime{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }   
+        .container{
+            position: relative;
+            left: 230px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center my-4">B.E-V SEM IT-2</h1>
+    
+        <div class="container text-centre">
+            <!-- Header Rows -->
+            <div class="row">
+                <div class="col-sm-1 bordered bg-secondary">Period</div>
+                <div class="col-sm-1 bordered bg-secondary">I</div>
+                <div class="col-sm-1 bordered bg-secondary">II</div>
+                <div class="col-sm-1 bordered bg-secondary">III</div>
+                <div class="col-sm-1 lunchtime bg-secondary"> </div>
+                <div class="col-sm-1 bordered bg-secondary">IV</div>
+                <div class="col-sm-1 bordered bg-secondary">V</div>
+                <div class="col-sm-1 bordered bg-secondary">VI</div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-1 bordered bg-secondary-subtle">Day/Time</div>
+                <div class="col-sm-1 bordered bg-secondary-subtle">9:10 To 10:10 AM</div>
+                <div class="col-sm-1 bordered bg-secondary-subtle">10:10 To 11:10 AM</div>
+                <div class="col-sm-1 bordered bg-secondary-subtle">11:15 To 12:15 PM</div>
+                <div class="col-sm-1 lunchtime bg-secondary-subtle">12:15 To 1:00 PM</div>
+                <div class="col-sm-1 bordered bg-secondary-subtle">1:00 To 2:00 PM</div>
+                <div class="col-sm-1 bordered bg-secondary-subtle">2:00 To 3:00 PM</div>
+                <div class="col-sm-1 bordered bg-secondary-subtle">3:05 To 4:05 PM</div>
+            </div>
+            <!-- Monday Row -->
+            <div class="row">
+                <div class="col-sm-1 bordered bg-primary-subtle">Monday</div>
+                <div class="col-sm-1 bordered">SE</div>
+                <div class="col-sm-1 bordered">FLAT</div>
+                <div class="col-sm-1 bordered">EAD</div>
+                <div class="col-sm-1 bordered bg-dark text-white vertical-text" rowspan="6"></div>
+                <div class="col-sm-1 bordered">PE-2</div>
+                <div class="col-sm-1 bordered">CN</div>
+                <div class="col-sm-1 bordered">ML</div>
+            </div>
+            <!-- Tuesday Row -->
+            <div class="row">
+                <div class="col-sm-1 bordered bg-primary-subtle">Tuesday</div>
+                <div class="col-sm-1 bordered">PE-2</div>
+                <div class="col-sm-2 bordered" style="background-color: rgb(192, 192, 45);"> 
+                    <div class="row-sm-5">CT LAB (B1)</div> 
+                    <div class="row-sm">/</div>
+                    <div class="row-sm-5">ML LAB (B2)</div>
+                </div>
+                <div class="col-sm-1 bordered bg-dark text-white vertical-text" rowspan="6"></div>
+                <div class="col-sm-1 bordered">CN</div>
+                
+                <div class="col-sm-2 bordered" style="background-color: rgb(192, 192, 45);">
+                    <div class="col-sm-5 ">CC LAB (B1)</div>
+                    <div class="col-sm"></div>
+                    <div class="col-sm-5 ">LIBRARY (B2) / SPORTS (B2)</div>
+                </div>
+            </div>
+            <!-- Wednesday Row -->
+            <div class="row">
+                <div class="col-sm-1 bordered bg-primary-subtle">Wednesday</div>
+                <div class="col-sm-1 bordered">EAD</div>
+                <div class="col-sm-1 bordered">ML</div>
+                <div class="col-sm-1 bordered " style="background-color: rgb(192, 192, 45);">
+                    <div class="row-sm-5">CN LAB (B1) </div>
+                    <div class="row-sm">/</div>
+                    <div class="row-sm-5">EAD LAB (B2)</div> 
+                </div>
+                <div class="col-sm-1 bordered bg-dark text-white vertical-text" rowspan="6">LUNCH BREAK</div>
+                <div class="col-sm-1 bordered" style="background-color: rgb(192, 192, 45);">
+                    <div class="row-sm-5">CN LAB (B1) </div>
+                    <div class="row-sm">/</div>
+                    <div class="row-sm-5">EAD LAB (B2)</div> 
+                </div>
+                <div class="col-sm-1 bordered">SE</div>
+                <div class="col-sm-1 bordered">FLAT</div>
+                
+            </div>
+            <!-- Thursday Row -->
+            <div class="row">
+                <div class="col-sm-1 bordered bg-primary-subtle">Thursday</div>
+                <div class="col-sm-2 bordered" style="background-color: rgb(192, 192, 45);"> 
+                    <div class="row-sm-5">CT LAB (B2) </div>
+                    <div class="row-sm">/</div>
+                    <div class="row-sm-5">ML LAB (B1)</div>
+                </div>
+                <div class="col-sm-1 bordered">CN</div>
+                <div class="col-sm-1 bordered bg-dark text-white vertical-text" rowspan="6"></div>
+                <div class="col-sm-1 bordered">SE</div>
+                <div class="col-sm-2 bordered"style="background-color: yellow;">
+                    <div class="row-sm-5">CN LAB (B2) </div>
+                    <div class="row-sm">/</div>
+                    <div class="row-sm-5">EAD LAB (B1)</div>
+                </div>
+                
+            </div>
+            <!-- Friday Row -->
+            <div class="row">
+                <div class="col-sm-1 bordered bg-primary-subtle">Friday</div>
+                <div class="col-sm-1 bordered">FLAT</div>
+                <div class="col-sm-1 bordered">ML</div>
+                <div class="col-sm-1 bordered">PE-2</div>
+                <div class="col-sm-1 bordered bg-dark text-white vertical-text" rowspan="6"></div>
+                <div class="col-sm-1 bordered">EAD</div>
+                <div class="col-sm-2 bordered" style="background-color: rgb(192, 192, 45);">
+                    <div class="col-sm-5 ">CC LAB (B2)</div>
+                    <div class="col-sm"></div>
+                    <div class="col-sm-5 ">LIBRARY (B1) / SPORTS (B1)</div>
+                </div>
+            </div>
+            <!-- Saturday Row -->
+            <div class="row">
+                <div class="col-sm-1 bordered bg-primary-subtle">Saturday</div>
+                <div class="col-sm-1 bordered">MENTORING</div>
+                <div class="col-sm-1 bordered"></div>
+                <div class="col-sm-1 bordered"></div>
+                
+                <div class="col-sm-1 bordered bg-dark text-white vertical-text" rowspan="6"></div>
+                <div class="col-sm-1 bordered"></div>
+                <div class="col-sm-1 bordered"></div>
+                <div class="col-sm-1 bordered"></div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>
